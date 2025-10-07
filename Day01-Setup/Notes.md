@@ -27,6 +27,7 @@ git pull origin main	Pull latest changes	git pull origin main
 git status	Check current repo state	git status
 
 
+
 4️⃣ Workflow Practiced
 # Daily GitHub workflow
 git add .
