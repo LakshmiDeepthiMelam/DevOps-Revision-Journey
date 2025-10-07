@@ -1,57 +1,48 @@
-# Day 01 - Environment Setup
+# Day 01 – Environment Setup & Git/GitHub Basics
 
-## Objectives
-- Install Git and configure global settings
-- Create DevOps-Revision-Journey repository
-- Connect GitHub to VS Code
+## 1️⃣ System Setup Checklist
+- [ ] Install Git (✅ already verified)
+- [ ] Install VS Code (✅ already installed)
+- [ ] Verify Git in VS Code terminal (`git --version`)
+- [ ] Configure Git username & email:
+  ```bash
+  git config --global user.name "LakshmiDeepthiMelam"
+  git config --global user.email "your_email@example.com"
 
-## Key Commands
-```bash
-git config --global user.name "LakshmiDeepthiMelam"
-git config --global user.email "your_email@example.com"
-git status
+  2️⃣ Create or Clone Repository
+
+Repository: DevOps-Revision-Journey
+
+Cloned via:
+
+git clone https://github.com/LakshmiDeepthiMelam/DevOps-Revision-Journey.git
+
+3️⃣ Git Basics Practiced Today
+Command	Description	Example
+git init	Initialize local repo	git init
+git add <file>	Stage changes	git add notes.md
+git commit -m "message"	Save snapshot	git commit -m "Day01 notes added"
+git push origin main	Push changes to GitHub	git push origin main
+git pull origin main	Pull latest changes	git pull origin main
+git status	Check current repo state	git status
+
+
+4️⃣ Workflow Practiced
+# Daily GitHub workflow
 git add .
-git commit -m "Initial commit"
+git commit -m "Day01: Environment setup & Git basics"
 git push origin main
-Learnings
 
-Understood Git configuration flow
 
-Learned how to commit from VS Code
+5️⃣ Observations / Learnings
 
-> Tip: Use proper markdown formatting (`#` for headings, `##` for subheadings, triple backticks for code) so your notes look organized on GitHub.
+Understood Git lifecycle (Working Dir → Staging → Commit → Remote).
 
----
+Practiced staging and committing individual files.
 
-## Step 5 — Save the file
+Verified push and pull between local & remote.
+✅ Day 01 Conclusion
 
-- Press **Ctrl + S** (or **File → Save**) to save `notes.md`.  
+Local setup complete.
 
----
-
-## Step 6 — Stage and commit in VS Code
-
-There are **two ways** to do this:
-
-### Option A — Using the Source Control GUI
-
-1. Click the **Source Control icon** (branch with dot, left sidebar).  
-2. You’ll see `Day01-Setup/notes.md` under **Changes**.  
-3. Hover → click **+** to stage the file.  
-4. Type a commit message in the box:
-Added Day01 notes - Environment Setup
-5. Click the **✔ Commit** icon.  
-6. Push to GitHub:
-- Click the three dots `⋯` → **Push**  
-- OR open terminal and run `git push origin main`
-
----
-
-### Option B — Using Terminal
-
-1. Open VS Code terminal (**Ctrl + `**)  
-2. Run:
-```bash
-git add Day01-Setup/notes.md
-git commit -m "Added Day01 notes - Environment Setup"
-git push origin main
+Repo successfully connected to GitHub.
